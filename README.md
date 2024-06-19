@@ -37,8 +37,9 @@ I am a software engineer, and I have been hired by an EdTech company to develop 
 1. Clone the repository:
    ```bash
    Educational Video Player
-    - cd video-app https://github.com/Mr-Higgs/Scope-Labs-Frontend.git 
-    - cd video-api https://github.com/Mr-Higgs/Scope-Labs-Backend.git 
+    - cd app https://github.com/Mr-Higgs/Scope-Labs-app.git
+    - git clone https://github.com/Mr-Higgs/Scope-Labs-app.git
+    - cd app
 
    ```
 
