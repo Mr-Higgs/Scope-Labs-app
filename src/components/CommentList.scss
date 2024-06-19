@@ -1,0 +1,38 @@
+@import '../styles/variables';
+@import '../styles/mixins';
+
+.commentdisplay{
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+
+  &__comment{
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 0.0925rem solid $color-dark-gray;
+  }
+
+  &__comment-image{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%; 
+    margin: 0rem 1rem 2.25rem 1rem; 
+  }
+  
+  &__comment-column{
+    display: flex;  
+    flex-direction: column;
+  }
+
+  &__comment-column-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &-name{
+      padding-bottom: 1rem;
+    }
+  }
+}
+

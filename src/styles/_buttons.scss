@@ -1,0 +1,7 @@
+.button-gold {
+    @include button-style($color-gold);
+}
+
+.upload-button {
+    @include button-style($color-blueish-green, $color-white);
+}

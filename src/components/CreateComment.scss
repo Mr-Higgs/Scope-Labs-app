@@ -1,0 +1,129 @@
+@import '../styles/variables';
+@import '../styles/mixins';
+
+.commentinput{
+    display: flex;
+    flex-direction: column;
+    color: $color-blueish-green;
+    border-radius: 0.5rem;
+    margin-top: 1.5rem;
+
+    &__label{
+        font-size: 1.25rem;
+        font-weight: bold;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    &__image{
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%; 
+        margin: 2.25rem 1rem 1rem 1rem; 
+    }
+
+    &__tab{
+        padding: 1rem;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        border-bottom: 0.0925rem solid $color-white;
+        
+        &-label{
+            padding: 1rem;
+            padding-bottom: 1.45rem;
+            font-size: 1rem;
+            width: 15rem;
+            color: $color-dark-gray;
+
+            
+        }
+
+        &-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            @include desktop_viewport{
+                height: 10rem;
+                display: flex;
+                flex-direction: row;
+                
+            }
+
+            @include tablet_viewport{
+                height: 10rem;
+                display: flex;
+                flex-direction: row;
+                
+            }
+            
+            
+        }
+
+        &-container-button{
+            background-color: $color-blueish-green;
+            border-radius: 2rem;
+            border: none;
+            color: $color-white;
+            margin: auto 1rem;
+            padding: 1rem 4rem;
+            background-position: 1rem;
+            font-size: 1rem; 
+
+            @include desktop_viewport{
+                height: 1.75rem;
+                display: flex;
+                flex-direction: row;
+                margin: auto 1rem;
+                padding: 1.5rem 1rem 1.5rem 1rem;
+                justify-content: center;
+                align-items: center;
+                width: 30%;
+            }
+
+            @include tablet_viewport{
+                height: 1.75rem;
+                display: flex;
+                flex-direction: row;
+                margin: auto 1rem;
+                padding: 1.5rem 1rem 1.5rem 1rem;
+                justify-content: center;
+                align-items: center;
+                width: 80%;
+            }            
+        }
+
+        &-container-button:hover{
+            background-color: $color-dark-blueish-green;
+        }
+
+
+        &-container-input{
+            height: 2rem;
+            width: 95%;
+            margin-top: 1rem;
+            text-align: left;
+            padding: 1rem 2rem 2rem 1rem;
+            background-color: $color-white;
+            border-color: $color-dark-gray;
+            border-radius: 2rem;
+
+            @include desktop_viewport{
+                height: 1.75rem;
+                display: flex;
+                flex-direction: row;
+                margin: 3rem;
+                padding: 1.3rem 1rem 1.3rem 1rem;
+            }
+
+            @include tablet_viewport{
+                height: 1.75rem;
+                display: flex;
+                flex-direction: row;
+                margin: auto;
+                padding: 1.3rem 1rem 1.3rem 1rem;
+            }
+        }
+    }
+}

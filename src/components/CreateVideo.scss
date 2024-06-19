@@ -1,0 +1,32 @@
+@import '../styles/variables';
+@import '../styles/mixins';
+
+.createVideo {
+  padding: 20px;
+  background-color: $light-background;
+  border-radius: 8px;
+
+  &-input{
+    width: 100%;
+    padding: 0.5rem;
+    text-align: left;
+    padding: 0.5rem;
+    background-color: $color-white;
+    border-color: $color-dark-gray;
+    border-radius: 0.25rem;
+    display: contents;
+    justify-content: center;
+  } 
+
+  &-label{
+    padding-top: 1rem;
+    font-size: 1rem;
+    width: 15rem;
+    color: colors.$primary-color-3;
+  }
+
+  .button-gold {
+    @include button-style;
+  }
+
+}

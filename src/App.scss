@@ -1,0 +1,31 @@
+@import './styles/variables';
+@import './styles/mixins';
+@import './styles/base';
+@import './styles/buttons';
+@import './styles/layout';
+@import './styles/components';
+
+*, *::before, *::after{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+  
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  @include flex-center;
+  flex-direction: row;
+  margin-bottom: 20px;
+
+  .logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+}

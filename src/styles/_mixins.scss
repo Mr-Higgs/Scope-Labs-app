@@ -1,0 +1,33 @@
+@mixin tablet_viewport{
+    @media (min-width: 768px){  
+        @content;
+    }
+};
+
+@mixin desktop_viewport{
+    @media (min-width:1280px) {
+        @content;
+    }
+};
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+};
+  
+@mixin button-style($bg-color:$color-gold, $text-color: $color-white) {
+    background-color: $bg-color;
+    color: $text-color;
+    border: none;
+    margin-bottom: .5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    font-size: 16px;
+
+    &:hover {
+        opacity: 0.9;
+    }
+};
+  
